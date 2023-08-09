@@ -1,7 +1,7 @@
 <template>
 
   <Acc_bonjour nom='NISHIME ' prenom="JEAN Bosco" />
-  <h2>Utilisateur {{ surnom }}</h2>
+  <h2>Utilisateur {{ surnom }} {{ nompropre }}</h2>
   <button @click="user=true">Commencer</button> <br>
   <Component_First v-if="user" @fermer="user=false"/> <br>
   <button @click="showpopup=true">Indication</button> <br>
@@ -34,7 +34,8 @@ export default {
             showpopup: false,
             user:false,
             surnom:'Mignon', 
-            nom: ''
+            nom: '',
+            nompropre:"Bosco"
                
             }
         },
