@@ -1,6 +1,6 @@
 <template>
 
-  <Acc_bonjour nom='NISHIMWE' prenom="J Bosco" />
+  <Acc_bonjour nom='NISHIME ' prenom="JEAN Bosco" />
   <h2>Utilisateur {{ surnom }}</h2>
   <button @click="user=true">Commencer</button> <br>
   <Component_First v-if="user" @fermer="user=false"/> <br>
